@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<script src="source.js">
+</script>
+<title>Untitled Document</title>
+</head>
+
+<body class="news">
+
+  <header>
+	<div class="dLogo">
+		<img id = "logo" src="Title.png" alt="Mountain View">
+	</div>
+	<div class="navigation">
+        <a href="Home.html">自宅</a>
+        <a href="History.html">歴史</a>
+        <a href="About.html">私たちに関しては</a>
+        <a href="News.html">ニュース</a>
+		<div class="dropdown">
+			<button class="dropbtn">製品 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="Honey.html">はちみつ</a>
+			  <a href="Pollen.html">花粉</a>
+			  <a href="Jelly.html">ローヤルゼリー</a>
+			</div>
+		</div> 
+        <a href="Contact.html">接触</a>
+		<a href="buy.html">どこで商品を購入できますか？</a>
+	</div>
+  </header>
+  <article>
+
+	<div id="hPage">
+		<div class "lang">
+			<a href="http://www.pianamiele.com/e-index.html" style="text-decoration:none;">
+			<img src="gb.png" style="height:30px">
+			</a>
+			<a href="http://www.pianamiele.com/index.html">
+			<img src="it.png" style="height:30px">
+			</a>
+		</div>
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 6</div>
+		  <img class="image" src="slide1.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="About.html">私たちに関しては</a></div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 6</div>
+		  <img class="image" src="slide2.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="History.html">歴史</a></div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 6</div>
+		  <img class="image" src="slide3.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="Honey.html">はちみつ</a></div>
+		</div>
+
+				<div class="mySlides fade">
+		  <div class="numbertext">4 / 6</div>
+		  <img class="image" src="slide4.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="News.html">ニュース</a></div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 6</div>
+		  <img class="image" src="slide5.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="Pollen.html">花粉</a></div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 6</div>
+		  <img class="image" src="slide6.jpg" style="width:100%">
+		  <div class="text"><a class = "slideLink" href="Jelly.html">ローヤルゼリー</a></div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span> 
+		</div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+	<hr></div>
+	<div id = "One">
+		<h1>
+			Pianamiele：ミツバチとハチミツ1世紀以上
+		</h1>
+		<p class="p1">
+			1903年、Apicoltura Pianaは、果樹園と芳香族ハーブの間にあるCastel San Pietro Termeの丘のふもとに生まれました。
+ミツバチの製品がその有益な特性を損なうことなく保存しなければならないことを忘れることなく、今日Apicoltura Pianaは市場のあらゆるニーズを満たすことができ、蜂蜜の消費があるすべての分野に存在します。
+Apicoltura Piana：時間の経過と共に品質が一定に保たれるように、慎重に選択した製品と組み合わせた素晴らしい経験。
+		</p>
+	</div>
+	<div id = "Two">
+		<h1>
+		ハニーフレンドリーサイト
+		</h1>
+		<div id="colour1">
+			カステルサンピエトロテルメ
+		</div>
+		<br>
+<iframe width="250" height="185" src="https://www.youtube.com/embed/5AqFqmJJMbI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		<hr>
+		<div id="colour2">
+			ピアナリサーチ
+		</div>
+		<p class="p1">
+		Piana Ricerca e Consulenza srlは、養蜂分野に特化したサービス会社です。
+		</p>
+		<a href="http://www.pianaricerca.it/" style = "text-decoration:none;">
+		Click
+		</a>
+		<hr>
+		<div id="colour2">
+		蜂蜜の大使
+		</div>
+			<p class="p1">
+				蜂の文化、蜂蜜、その他の蜂蜜製品のサポートと普及のための文化協会。
+			</p>
+					<a href="http://www.ambasciatorimieli.it/" style = "text-decoration:none;">
+					Click</a>
+	</div>
+  </article>
+      <footer>
+		<a href="e-index.html" id = "footNote">Home</a> | <a href="index.html"id = "footNote">Italiano</a> | <a href="#"id = "footNote">Contacts</a> | Credits
+            </span>&copy; 2011  <strong>Apicoltura Piana</strong>&nbsp;|&nbsp; PIVA: IT00500491204 </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/*
+Shared Elements
+*/
+
+html{
+	margin:0;
+	position:relative; 
+    min-height: 100%;
+}
+body{
+    margin: 100px 0 100px;
+	background-color:white;
+}
+
+h1, h2, h3{
+		font-family: "Andale Mono", monospace;
+}
+
+footer{
+	width: 100%;   
+	background-color: black;
+	text-align:center;
+	color:white;
+	position:absolute;
+    bottom: 0;
+    left: 0;	
+    overflow: hidden;
+}
+/* Navigation */
+ul{
+	list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+	text-align:center;
+	position:Fixed;
+	width:100%;
+	top:0px;
+	
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    display:inline-block;
+}
+
+li a{
+	display: block;
+	text-decoration: none;
+    color: white;
+    padding: 28px 32px;
+	font-family: "Andale Mono", monospace;
+}
+li a:hover {
+  background-color: grey;
+  transition: background-color 0.2s ease;
+}
+a{
+	  text-decoration: none;
+}
+
+/*Content*/
+.content{
+	text-align:center;
+}
+
+ /*Container*/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*
+Individual Elements
+*/
+
+/*Contact page*/
+
+.contact_gc {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin:0 auto;
+  width:1200px;
+}
+
+#p_number{
+	text-align:left;
+	padding-top:40px;
+}
+
+/*Project Grid*/
+
+.projects_gc {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width:1200px;
+	margin: 80px auto 0;
+	grid-gap: 30px 30px;
+}
+
+.projects_gi {
+  text-align: center;
+  background-color:#F2F1F1;
+  padding:40px;
+  border-radius: 50%;
+}
+.pLinks{
+transition: opacity .15s ease-in-out;
+}
+.pLinks:hover{
+	  opacity: 0.5;
+}
+
+img {
+  border-radius: 50%;
+}
+
+/*Skills Grid*/
+
+.skills_gc {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 50px;
+  width:600px;
+  margin: 0 auto;
+  grid-gap: 20px 20px;
+}
+.skills_gi {
+  text-align: center;
+  background-color:#F2F1F1;
+  display:block;
+}
+#s1{
+	transition:background-color .2s ease-in-out;
+}
+#s1:hover{
+	background-color:grey;
+}
+.sk3{
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+.sk3.open{
+	  transform: rotate(360deg);
+  transition: transform 0.2s linear;
+}

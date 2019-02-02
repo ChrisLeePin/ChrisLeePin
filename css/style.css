@@ -135,16 +135,21 @@ transition: opacity .15s ease-in-out;
 img {
   border-radius: 50%;
 }
-
+/*About*/
+#portrait{
+	margin-top:40px;
+	margin-bottom:40px;
+  border: 5px solid;
+}
 /*Skills Grid*/
 
 .skills_gc {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  padding: 50px;
-  width:600px;
+  grid-template-columns: 140px 140px 140px;
+  padding: 60px;
+  width:550px;
   margin: 0 auto;
-  grid-gap: 20px 20px;
+  grid-gap: 60px 60px;
 }
 .skills_gi {
   text-align: center;
@@ -160,6 +165,7 @@ img {
 .sk3{
   transform: rotate(0deg);
   transition: transform 0.2s linear;
+   cursor: pointer;
 }
 .sk3.open{
 	  transform: rotate(360deg);

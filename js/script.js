@@ -1,13 +1,8 @@
-$(document).ready(function(){
-  var open = false;
-
-});	
+var open = false;
 
 function display(clicked_id){
     $("#panel" + clicked_id).slideToggle("slow");
 };
-
-
 
 function spin(){
   var icon = document.getElementById('s3');
@@ -17,5 +12,5 @@ function spin(){
     } else{
       icon.className = 'skills_gi sk3 open';
 }
-        open = !open;
+    open = !open;
 }

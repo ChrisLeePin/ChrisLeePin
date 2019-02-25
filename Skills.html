@@ -2,15 +2,18 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
 	<title>Chris Lee Pin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<ul>
-		<li><a href="index.html">About Me</a></li>
-		<li><a href="Skills.html">Skills</a></li>
-		<li><a href="Projects.html">Projects</a></li>
-		<li><a href="Contact.html">Contact</a></li>
+	<ul class ="navbar" id="nav">
+		<li class="icon" onclick="displayNav()"><a>&#9776;</a></li>
+		<li class ="link"><a href="index.html">About Me</a></li>
+		<li class ="link"><a href="Skills.html">Skills</a></li>
+		<li class ="link"><a  href="Projects.html">Projects</a></li>
+		<li class ="link"><a href="Contact.html">Contact</a></li>
 	</ul>
 	<div class ="content">
 		<div>
@@ -20,41 +23,51 @@
 		</div>
 		<hr>
 		<div class="skills_gc">
-			<div class="skills_gi" id="s1">
+			<div class="skills_gi hov1" id="s1">
 				<h3>
 					HTML
 				</h3>
 			</div>
-			<div class="skills_gi " id="s2">
+			<div class="skills_gi spin" id="s2" onclick="spin(this.id)">
 				<h3>
 					CSS
 				</h3>
 			</div>
-			<div class="skills_gi sk3" id="s3" onclick="spin()">
+			<div class="skills_gi spin" id="s3" onclick="spin(this.id)">
 				<h3>
 					Javascript
 				</h3>
 			</div>
-			<div class="skills_gi "id="s4">
+			<div class="skills_gi spin" id="s4" onclick="spin(this.id)">
 				<h3>
 					Github
 				</h3>
 			</div>
-			<div class="skills_gi "id="s5">
+			<div class="skills_gi hov2" id="s5" onclick="spin(this.id)">
 				<h3>
 					JQuery
 				</h3>
 			</div>
-			<div class="skills_gi "id="s6">
+			<div class="skills_gi spin" id="s6" onclick="spin(this.id)">
 				<h3>
 					BootStrap
+				</h3>
+			</div>
+			<div class="skills_gi spin" id="s7" onclick="spin(this.id)">
+				<h3>
+					Java
+				</h3>
+			</div>
+			<div class="skills_gi spin" id="s8" onclick="spin(this.id)">
+				<h3>
+					Git
 				</h3>
 			</div>
 		</div>
 	</div>
 	<footer>
 		<p>
-			Site Map | Links | Conditions for Use |
+			Footer
 		</p>
 	</footer>
 </body>

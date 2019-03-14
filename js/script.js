@@ -24,9 +24,9 @@ function spin(id){
 function displayNav() {
 	var x = document.getElementById("nav");
 
-  if (x.className === "navbar") {
+  if (x.className === "navlist") {
     x.className += "resp";
 	} else {
-    x.className = "navbar";
+    x.className = "navlist";
   }
 }

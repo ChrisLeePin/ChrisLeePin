@@ -1,0 +1,28 @@
+{
+  "name": "chrisleepin",
+  "version": "1.0.0",
+  "description": "First npm proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisLeePin/chrisleepin.git"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisLeePin/chrisleepin/issues"
+  },
+  "homepage": "https://github.com/ChrisLeePin/chrisleepin#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {}
+}

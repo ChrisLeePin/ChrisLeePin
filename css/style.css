@@ -1,251 +1,204 @@
 /*-------------------------------------------*\
     Shared Elements
 \*-------------------------------------------*/
+html {
+  margin: 0;
+  position: relative;
+  min-height: 100%; }
 
-html{
-	margin:0;
-	position:relative; 
-    min-height: 100%;
-}
-body{
-    margin: 100px 0 100px;
-	background-color:white;
-}
+body {
+  margin: 100px 0 100px;
+  background-color: white; }
 
-h1, h2, h3{
-		font-family: "Andale Mono", monospace;
-}
+h1, h2, h3 {
+  font-family: "Andale Mono", monospace; }
 
-footer{
-	width: 100%;   
-	background-color: black;
-	text-align:center;
-	color:white;
-	position:absolute;
-    bottom: 0;
-    left: 0;	
-    overflow: hidden;
-}
+footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
 
 /* Navigation */
+.navlist {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  position: Fixed;
+  width: 100%;
+  top: 0px;
+  padding: 0px;
+  margin: 0px; }
 
-.navbar{
-	list-style-type: none;
-    overflow: hidden;
-    background-color: black;
-	text-align:center;
-	position:Fixed;
-	width:100%;
-	top:0px;
-	
-    padding: 0px;
-    margin: 0px;
-}
 li {
-    display:inline-block;
-}
+  display: inline-block; }
 
-li a{
-	display: block;
-	text-decoration: none;
-    color: white;
-    padding: 28px 32px;
-	font-family: "Andale Mono", monospace;
-}
+li a {
+  display: block;
+  color: white;
+  padding: 28px 32px;
+  font-family: "Andale Mono", monospace;
+  text-decoration: none; }
+
 li a:hover {
   background-color: grey;
   transition: background-color 0.2s ease;
-}
-a{
-	  text-decoration: none;
-}
-.icon{
-	display:none;
-}
+  text-decoration: none;
+  color: white;
+  /*Why does it not inherit the css?*/ }
+
+.icon {
+  display: none; }
 
 /*Content*/
+.content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 0 40px; }
 
-.content{
-	text-align:center;
-	max-width:1200px;
-	margin:0 auto;
-  padding:0 40px 0 40px;
-}
-
- /*Container*/
-
+/*Container*/
 .container {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /*-------------------------------------------*\
     Individual Pages
 \*-------------------------------------------*/
-
 /*Contact page*/
-
 .contact_gc {
   display: grid;
   grid-template-columns: 30% 70%;
-  width:100%;
-}
+  width: 100%; }
 
-#p_number{
-	text-align:left;
-	padding-top:40px;
-}
+#p_number {
+  text-align: left;
+  padding-top: 40px; }
 
 /*Project Grid*/
-
 .projects_gc {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr) ) ;
-	max-width:1100px;
-	margin: 80px auto 0;
-	grid-gap: 30px 30px;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  max-width: 1100px;
+  margin: 80px auto 0;
+  grid-gap: 30px 30px; }
 
 .projects_gi {
   text-align: center;
-  background-color:#F2F1F1;
-  padding:40px;
-  border-radius: 50%;
-}
-.pLinks{
-	transition: opacity .15s ease-in-out;
-}
-.pLinks:hover{
-	opacity: 0.5;
-}
+  background-color: #F2F1F1;
+  padding: 40px;
+  border-radius: 50%; }
+
+.pLinks {
+  transition: opacity .15s ease-in-out; }
+
+.pLinks:hover {
+  opacity: 0.5; }
 
 img {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 /*About*/
-
-#portrait{
-	margin-top:40px;
-	margin-bottom:40px;
-  border: 5px solid;
-}
+#portrait {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 5px solid; }
 
 /*Skills Grid*/
-
 .skills_gc {
   display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(140px, 140px) ) ;
-	max-width:550px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
+  max-width: 550px;
   padding: 60px;
   margin: 0 auto;
-  grid-gap: 60px 60px;
-}
+  grid-gap: 60px 60px; }
+
 .skills_gi {
   text-align: center;
-  background-color:#F2F1F1;
-  display:block;
-}
-.hov1{
-	transition:background-color .2s ease-in-out;
-}
-.hov1:hover{
-	background-color:grey;
-}
-.spin{
+  background-color: #F2F1F1;
+  display: block; }
+
+.hov1 {
+  transition: background-color .2s ease-in-out; }
+
+.hov1:hover {
+  background-color: grey; }
+
+.spin {
   transform: rotate(0deg);
   transition: transform 0.2s linear;
-	cursor: pointer;
-}
-.spun{
-	  transform: rotate(360deg);
+  cursor: pointer; }
+
+.spun {
+  transform: rotate(360deg);
   transition: transform 0.2s linear;
-	cursor: pointer;
-}
+  cursor: pointer; }
 
 /*-------------------------------------------*\
     Phones Resolution
 \*-------------------------------------------*/
-
 /* Navigation */
-
-@media screen and (max-width: 420px){
-.content{
-	padding:20px;
-}
-.link{
-	display:none;
-}
-.navbar{
-	text-align:right;
-}
-.icon{
+@media screen and (max-width: 420px) {
+  .content {
+    padding: 20px; }
+  .link {
+    display: none; }
+  .navlist {
+    text-align: right; }
+  .icon {
     display: block;
-	text-align:right;
-}
-
-.navbarresp{
-	list-style-type: none;
+    text-align: right; }
+  .navlistresp {
+    list-style-type: none;
     background-color: black;
-	text-align:center;
-	position:absolute;
-	width:100%;
-	top:0px;
-	height:100%;
-    padding: 0px;
-	bottom:0px;
-    margin: 0 auto;
-  z-index: +1;
-}
-.navbarresp .link{
-	width:100%;
-    display: block;
-}
-.navbarresp .link a{
     text-align: center;
-	text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    padding: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    z-index: +1; }
+  .navlistresp .link {
+    width: 100%;
+    display: block; }
+  .navlistresp .link a {
+    text-align: center;
+    text-decoration: none;
     color: white;
     padding: 28px 32px;
-	font-family: "Andale Mono", monospace;
-}
-.navbarresp li:first-child{
-	width:100%;
-	float:none;
-}
+    font-family: "Andale Mono", monospace; }
+  .navlistresp li:first-child {
+    width: 100%;
+    float: none; }
+  .contact_gc {
+    width: auto;
+    grid-template-columns: auto; }
+  #p_number {
+    text-align: center;
+    padding-top: 40px; }
+  .projects_gc {
+    grid-template-columns: auto;
+    width: auto; }
+  .skills_gc {
+    grid-template-columns: auto;
+    width: 140px; } }
 
-.contact_gc {
-	width:auto;
-  grid-template-columns: auto;
-}
-#p_number{
-	text-align:center;
-	padding-top:40px;
-}
-
-.projects_gc {
-	grid-template-columns: auto;
-	width:auto;
-}
-
-.skills_gc {
-  grid-template-columns: auto;
-  width:140px;
-}
-}
 /*-------------------------------------------*\
     iPads/Labtops
 \*-------------------------------------------*/
-
 /*  */
-@media screen and (max-width: 1100px){
-/*
-	.projects_gc {
-	display: grid;
-	grid-template-columns: auto ;
-	width:370px;
-	margin: 80px auto 0;
-	grid-gap: 30px 30px;
-	background-color:red;
-	}
-	*/
-}
+@media screen and (max-width: 1100px) {
+  .projects_gc {
+    display: grid;
+    grid-template-columns: auto;
+    width: 370px;
+    margin: 80px auto 0;
+    grid-gap: 30px 30px;
+    background-color: red; } }

@@ -13,7 +13,7 @@ function sum() {
 function add(x) {
 	x = x.trim();
 	if (input == "-" || input == "+" ||input == "*" ||input == "/"){
-		if(x !== "-" && x !== "+" && input == "*" && input == "/"){
+		if(x !== "-" && x !== "+" && x !== "*" && x !== "/"){
 			document.getElementById("display").textContent += x;
 			input = x;
 		}

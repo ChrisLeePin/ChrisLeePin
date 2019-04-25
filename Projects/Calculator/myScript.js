@@ -2,12 +2,28 @@ $(document).ready(function(){
 	$(".container").fadeIn();
 });
 
-function myFunction() {
-	$("p").fadeOut(function(){
-		var x = document.getElementById("input").value;
-		x = x*1.177;
-		x = x.toFixed(2);
-		document.getElementById("output").innerHTML = "$" + x;
-		$("p").fadeIn();
-	});
+var input;
+
+function sum() {
+	var x = eval(document.getElementById("display").textContent);
+	x = x * 1.177;
+	document.getElementById("display").textContent = x
+	}
+
+function add(x) {
+	x = x.trim();
+	if (input == "-" || input == "+" ||input == "*" ||input == "/"){
+		if(x !== "-" && x !== "+" && input == "*" && input == "/"){
+			document.getElementById("display").textContent += x;
+			input = x;
+		}
+	}
+	else{
+		document.getElementById("display").textContent += x;
+		input = x;
+	}
+}
+
+function remove() {
+	document.getElementById("display").textContent = "";
 }
